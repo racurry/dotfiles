@@ -4,3 +4,10 @@
 
 [includeIf "gitdir:~/workspace/stitchfix/"]
     path = ~/.gitconfig_work
+
+[alias]
+    lol = log --oneline --decorate --graph
+    acm = "!f() { git add . && git commit -m \"$1\"; }; f"
+
+[core]
+    excludesfile = ~/.gitignore_global

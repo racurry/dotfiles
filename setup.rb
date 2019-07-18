@@ -2,7 +2,7 @@
 
 require 'fileutils'
 
-DOTFILES = %w{.vimrc .zshrc .gitconfig .gitconfig_work}
+DOTFILES = %w{.vimrc .zshrc .gitconfig .gitconfig_work .gitignore_global}
 
 HOME_DIR = File.expand_path('~')
 DOTFILES_DIR = Dir.pwd
