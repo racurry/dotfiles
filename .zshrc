@@ -52,6 +52,9 @@ cd () {
 
 export workspace=~/workspace
 
+# The Fuck
+eval $(thefuck --alias)
+
 # Example aliases
 alias rezsh="source ~/.zshrc"
 alias zshconfig="subl ~/.zshrc"
