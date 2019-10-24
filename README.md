@@ -1,11 +1,3 @@
-# Dotfiles
+# DEAD DEAD DEAD
 
-These are my dotfiles
-
-## How though
-
-`setup.rb`
-
-## Add new dotfiles
-
-Add them to the repo, then add them to `setup.rb`'s `DOTFILES` list.
+I moved all my dotfiles into [my setup repo](https://github.com/racurry/osx_setup)
