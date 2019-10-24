@@ -55,10 +55,11 @@ export workspace=~/workspace
 # The Fuck
 eval $(thefuck --alias)
 
-# Example aliases
+# Aliases
 alias rezsh="source ~/.zshrc"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias be="bundle exec"
+alias ls="ls -a"
 # Fix zsh breaking rake like a total turd
 alias rake='noglob bundled_rake'

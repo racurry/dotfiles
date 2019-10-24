@@ -3,11 +3,30 @@
 	name = Aaron Curry
 
 [includeIf "gitdir:~/workspace/stitchfix/"]
-    path = ~/.gitconfig_work
+  path = ~/.gitconfig_work
 
 [alias]
-    lol = log --oneline --decorate --graph
-    acm = "!f() { git add . && git commit -m \"$1\"; }; f"
+  # Command shortcuts
+  ci = commit
+  co = checkout
+  st = status
+
+  # Prettier, easier to follow logs.
+  lol = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+
+  # Don't accidentally clobber someone else's stuff
+  pushf = push --force-with-lease
+  # Take some of the sting out of messing up
+  oops = commit --amend --no-edit
 
 [core]
-    excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
+  pager = cat
+
+[diff]
+  # Show renames/moves as such
+  renames = true
+
+[status]
+  # Recursively traverse untracked directories to display all contents
+  showUntrackedFiles = all
